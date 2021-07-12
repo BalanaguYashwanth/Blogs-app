@@ -2,6 +2,7 @@ import React from 'react'
 import { Typography, makeStyles, Card, CardActionArea, CardMedia, CardContent, Grid } from '@material-ui/core'
 import '../App.css'
 import Realme from '../RealmeNarzo.jpg'
+import Redmi from '../redmi.jpeg'
 
 const useStyles = makeStyles({
     card: {
@@ -51,8 +52,8 @@ export default function product() {
                             <CardActionArea >
                                 <CardMedia
                                     className={styles.media}
-                                    image={Realme}
-                                    title='realme'
+                                    image={Redmi}
+                                    title='redmi'
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
@@ -93,8 +94,8 @@ export default function product() {
                             <CardActionArea >
                                 <CardMedia
                                     className={styles.media}
-                                    image={Realme}
-                                    title='realme'
+                                    image={Redmi}
+                                    title='redmi'
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
@@ -139,8 +140,8 @@ export default function product() {
                             <CardActionArea >
                                 <CardMedia
                                     className={styles.media}
-                                    image={Realme}
-                                    title='realme'
+                                    image={Redmi}
+                                    title='redmi'
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
