@@ -3,6 +3,7 @@ import { Typography, makeStyles, Card, CardActionArea, CardMedia, CardContent, G
 import '../App.css'
 import Realme from '../RealmeNarzo.jpg'
 import Redmi from '../redmi.jpeg'
+import Navbar from '../screens/navbar'
 
 const useStyles = makeStyles({
     card: {
@@ -33,8 +34,6 @@ const useStyles = makeStyles({
         backdropFilter: ' blur(5)',
     }
 
-
-
 })
 
 export default function product() {
@@ -61,22 +60,9 @@ export default function product() {
 
     return (
         <div>
-
-            <ul>
-                <li>
-                    <img height='30'  src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png' />
-                </li>
-                <li>
-                    Home
-                </li>
-                <li>
-                    About
-                </li>
-                <li>
-                    Explore
-                </li>
-            </ul>
-            <hr />
+            
+            <Navbar />
+            
 
             <div style={{ marginTop: 100 }}>
                 <div style={{ textAlign: 'center', alignItems: 'center', }} >
