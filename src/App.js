@@ -14,7 +14,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div >
-        <MasterForm />
+        <Product />
       </div>
     </ThemeProvider>
   );
