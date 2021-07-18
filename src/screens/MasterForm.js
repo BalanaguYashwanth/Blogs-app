@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types';
 import '../App.css'
 import Navbar from '../screens/navbar'
-import {TextField} from '@material-ui/core' 
+import {TextField, Button} from '@material-ui/core' 
 
 class MasterForm extends React.Component {
 
@@ -67,11 +67,12 @@ class MasterForm extends React.Component {
     let currentStep = this.state.currentStep;
     if (currentStep < 3) {
       return (
-        <button
+        <Button
+          variant='contained'
           className="btn btn-primary float-right"
           type="button" onClick={this._next}>
           Next
-        </button>
+        </Button>
       )
     }
     return null;
@@ -140,7 +141,7 @@ class MasterForm extends React.Component {
               onChange={props.handleChange}
             />
           </div>
-          <button className="btn btn-success btn-block">Sign up</button>
+          <Button variant='contained' className="btn btn-success btn-block">Sign up</Button>
         </React.Fragment>
       );
 
