@@ -1,5 +1,6 @@
 import React from 'react'
 import '../App.css'
+import {Link} from 'react-router-dom'
 
 export default function navbar()
 {
@@ -10,13 +11,13 @@ export default function navbar()
                     <img height='30'  src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png' />
                 </li>
                 <li>
-                    Home
+                    <Link className='link' to='/'> Home </Link>
                 </li>
                 <li>
                     About
                 </li>
                 <li>
-                    Explore
+                <Link className='link' to='/explore'> Explore </Link>
                 </li>
             </ul>
             <hr />

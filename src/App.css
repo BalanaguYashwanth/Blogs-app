@@ -14,12 +14,19 @@
   background-attachment: fixed;
 }
 
+.input{
+  width: 100;
+  padding: 15px;
+  border-radius: 5px;
+  display:block;
+  margin:5px;
+}
 
-.middle{
+/* .middle{
   text-align: center;
   float: center;
   align-items: center;
-}
+} */
 
 .form-control{
   width: 100%;
@@ -31,11 +38,92 @@
   box-sizing: border-box;
 }
 
-.middle form{
+.buttonanimation{
+  border: 1px solid rgba(241, 234, 234, 0.986);
+  background-color: transparent;
+  color: rgba(241, 234, 234, 0.986);
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  animation: blinker 5s;
+  animation-iteration-count: 1;
+}
+
+.button{
+  border: 1px solid rgba(241, 234, 234, 0.986);
+  background-color: transparent;
+  color: rgba(241, 234, 234, 0.986);
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@keyframes blinker {
+ 
+
+  40% {
+    opacity: 5;
+  }
+  41% {
+    opacity: 0;
+  }
+  42% {
+    opacity: 1;
+  }
+  43% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+li .link{
+  color: rgba(241, 234, 234, 0.986);
+  text-decoration: none;
+}
+
+.animation{
+  position: relative;
+  animation: mymove 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+  from {top: 1000px;}
+  to {top: 0px}
+}
+
+.animation1{
+  position: relative;
+  animation: mymove1 1s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes mymove1 {
+  from {top: 0px}
+  to {top:-1000px}
+}
+
+
+.hidescroll{
+  overflow: hidden;
+  height: auto; 
+  max-width: 100%;
+  background-color: black; 
+} 
+
+.middle {
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
+  text-align: center;
+  align-items: center;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
