@@ -45,8 +45,9 @@
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
+  margin:20px;
   animation: blinker 5s;
-  animation-iteration-count: 1;
+  animation-iteration-count: 1; 
 }
 
 .button{
@@ -56,10 +57,34 @@
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
+  margin:10px;
 }
 
+.buttonselected{
+  border: 1px solid rgba(241, 234, 234, 0.986);
+  background-color: transparent;
+  color: rgba(241, 234, 234, 0.986);
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  margin:10px;
+  color: black;
+  background: rgba(241, 234, 234, 0.986);
+}
+
+.button:hover {
+  color: black;
+  background: rgba(241, 234, 234, 0.986);
+}
+
+/* .button:focus {
+  color: black;
+  background: rgba(241, 234, 234, 0.986);
+} */
+
+
+
 @keyframes blinker {
- 
 
   40% {
     opacity: 5;
@@ -103,12 +128,10 @@ li .link{
   animation-fill-mode: forwards;
 }
 
-
 @keyframes mymove1 {
   from {top: 0px}
   to {top:-1000px}
 }
-
 
 .hidescroll{
   overflow: hidden;
@@ -117,15 +140,16 @@ li .link{
   background-color: black; 
 } 
 
+
 .middle {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  min-height: 80vh;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
   align-items: center;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  justify-content: center;
 }
 
 .glass {  

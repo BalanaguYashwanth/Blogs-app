@@ -60,16 +60,17 @@ export default function product() {
 
     return (
         <div>
-            
-            <Navbar />
-            
 
-            <div style={{ marginTop: 100 }}>
+            <Navbar />
+
+
+            <div style={{ marginTop: 50 }}>
                 <div style={{ textAlign: 'center', alignItems: 'center', }} >
 
                     <Typography variant='h3' style={{ fontWeight: 'bold', }} gutterBottom >  Best Smartphone under 10k </Typography>
 
                     <div style={{ padding: 20, overflowX: 'hidden' }} >
+
 
                         <Grid container justifyContent='center' spacing={3} style={{ flexGrow: 1 }}>
 
@@ -129,9 +130,8 @@ export default function product() {
                                 </Card>
                             </Grid>
 
-
                         </Grid>
-                        <Typography variant='h3' style={{ fontWeight: 'bold', margin: 40 }} gutterBottom >  Best Smartphone under 20k </Typography>
+                        <Typography variant='h3' style={{ fontWeight: 'bold', marginTop:30, marginBottom:30, }} gutterBottom >Best Smartphone under 20k</Typography>
 
                         <Grid container justifyContent="center" spacing={3} style={{ flexGrow: 1 }} >
                             <Grid item md={3} >
