@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Navbar from './navbar'
+import axios from 'axios'
 import { Button, makeStyles, Grid } from '@material-ui/core'
 import '../App.css'
 
@@ -21,10 +22,12 @@ export default function explore() {
     const [buttonAnimation, setButtonAnimation] = useState('button')
     const [buttonselected, setButtonselected] = useState('button')
     const [bool, setbool] = useState(false)
+    const [select, setSelect] = useState()
     const lists = [{ id: 1, title: '5k price' }, { id: 2, title: '10k price' }, { id: 3, title: '15k price' }, { id: 4, title: '20k price' }]
     const specs = [{id:1,title:'Gaming'},{id:2,title:'Non Gaming'},{id:3,title:'Camera'},{id:4,title:'Battery'}]
+    const genders = [{id:1, title:'Sister or Women'},{id:2, title:'Parents'},{id:3,title:'Brother or Men'}]
 
-    const [select, setSelect] = useState()
+
 
     function button() {
         return (
@@ -46,7 +49,7 @@ export default function explore() {
     function step4() {
         return (
             <div className={animation}>
-                <p style={{ fontWeight: 'bold' }}> Step 1 </p>
+                <p style={{ fontWeight: 'bold' }}> Step 4 </p>
                 <input type="text" placeholder='Enter your Name' className={styles.input} />
                 {button()}
             </div>
@@ -56,7 +59,7 @@ export default function explore() {
     function step5() {
         return (
             <div className={animation}>
-                <p style={{ fontWeight: 'bold' }}> Step 2 </p>
+                <p style={{ fontWeight: 'bold' }}> Step 5 </p>
                 <input type="text" placeholder='Enter your email' className={styles.input} />
                 {button()}
             </div>
@@ -114,15 +117,13 @@ export default function explore() {
                 <div >
                     <h3 style={{ fontWeight: 'bold' }} > Step 3 </h3>
                     <Grid container spacing={3} directon="row" style={{ flexGrow: 1 }} justifyContent="center" alignItems="center">
-                        <Grid item  >
-                            <button className='button' > Sisters or Women </button>
-                        </Grid>
-                        <Grid item >
-                            <button className='button' > Parents </button>
-                        </Grid>
-                        <Grid item >
-                            <button className='button' > Brothers or Men </button>
-                        </Grid>
+                        {
+                            genders && genders.map( (gender,index) => (
+                                <Grid item key={index} >
+                                    <button className={select == gender.id ? "buttonselected" : "button"}    onClick={() => selected(gender.id)} > {gender.title} </button>
+                                 </Grid>   
+                            ) )
+                        } 
                     </Grid>
                     <br />
                     {button()}

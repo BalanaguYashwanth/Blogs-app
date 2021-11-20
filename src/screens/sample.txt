@@ -1,0 +1,9 @@
+
+"Display":"96%",
+"Software":"96%",
+"Performance":"96%",
+"Battery Life":"96%",
+"Camera":"96%',
+
+
+{"Display":"96%","Software":"96%","Performance":"96%","Battery Life":"96%","Camera":"96%'}

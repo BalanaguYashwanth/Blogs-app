@@ -60,6 +60,62 @@
   margin:10px;
 }
 
+.container {
+  background-color: rgb(192, 192, 192);
+  border-radius: 10px;
+}
+
+
+.skill {
+  border: 1px solid black;
+  background: linear-gradient(-15deg, #ff7a18 10%, #af002d 92.07%, #af002d 99.07%);
+  color: white;
+  padding: 1%;
+  font-size: 20px;
+  border-radius: 10px;
+  background-repeat:'no-repeat';  
+}
+
+
+
+.skill .skill1{
+  background-image: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+  z-index: 1;
+  background-size: 50px 50px;
+  animation: move 2s linear infinite;
+  overflow: hidden;
+}
+
+ @keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+  
+} 
+
+/* @keyframes move {
+  from {left: 0px;}
+  to {left: 200px;}
+
+} */
+
+.html {
+  width: 95%;
+}
+
+
 .buttonselected{
   border: 1px solid rgba(241, 234, 234, 0.986);
   background-color: transparent;
@@ -81,8 +137,6 @@
   color: black;
   background: rgba(241, 234, 234, 0.986);
 } */
-
-
 
 @keyframes blinker {
 
